@@ -4,21 +4,21 @@
 <div class="row">
 <div class="col-6 offset-3">
   <h3>Add Campgrounds</h3>
-  <form action="/campgrounds/new" method="post">
+  <form action="/campgrounds/new" method="post" novalidate class="validated-form">
     
     <label for="title" class="form-label">Title</label>
-  <input type="text" class="form-control" placeholder="title" name="Campground[title] " id="title">
+  <input type="text" class="form-control" placeholder="title" name="Campground[title] " id="title" required>
  
   <label for="location" class="form-label">Location</label>
-  <input type="text" class="form-control" placeholder="Location" name="Campground[Location] " id="location">
+  <input type="text" class="form-control" placeholder="Location" name="Campground[Location] " id="location" required>
   <label for="description" class="form-label">Description</label>
-  <input type="text" class="form-control" placeholder="description" name="Campground[description] " id="description">
+  <input type="text" class="form-control" placeholder="description" name="Campground[description] " id="description" required>
   
   <label for="Price" class="form-label">Price</label>
-  <input type="text" class="form-control" placeholder="Price" name="Campground[price] " id="Price">
+  <input type="text" class="form-control" placeholder="Price" name="Campground[price] " id="Price" required>
  
   <label for="image" class="form-label">Image Url</label>
-  <input type="text" class="form-control" placeholder="image" name="Campground[image] " id="image">
+  <input type="text" class="form-control" placeholder="image" name="Campground[image] " id="image" required>
   <button type="submit" class="btn btn-primary mt-5">Submit</button>
 </form>
 </div>
