@@ -30,6 +30,13 @@ const seedDB = async () => {
             title: `${sample(descriptors)} ${sample(places)}`,
             image:'https://source.unsplash.com/collection/483251',
             price:cost,
+            geometry: {
+                type: "Point",
+                coordinates: [
+                    cities[random1000].longitude,
+                    cities[random1000].latitude,
+                ]
+            },
             description:"Loreum ipsium woods"
         })
         console.log(camp)

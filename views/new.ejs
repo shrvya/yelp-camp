@@ -4,7 +4,7 @@
 <div class="row">
 <div class="col-6 offset-3">
   <h3>Add Campgrounds</h3>
-  <form action="/campgrounds/new" method="post" novalidate class="validated-form">
+  <form action="/campgrounds/new" method="post" novalidate class="validated-form" enctype="application/json">
     
     <label for="title" class="form-label">Title</label>
   <input type="text" class="form-control" placeholder="title" name="Campground[title] " id="title" required>
@@ -19,6 +19,10 @@
  
   <label for="image" class="form-label">Image Url</label>
   <input type="text" class="form-control" placeholder="image" name="Campground[image] " id="image" required>
+  <!-- <label for="image" class="form-label">Image </label>
+  <input type="file" id="image" name="image" multiple> -->
+  
+    
   <button type="submit" class="btn btn-primary mt-5">Submit</button>
 </form>
 </div>

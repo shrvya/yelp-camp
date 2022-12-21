@@ -4,6 +4,16 @@ const Review = require('./review')
 const CampgroundSchema = new Schema({
     title: String,
     image:String,
+    geometry: {
+        type: {
+            type: String,
+            enum: ['Point'],
+        },
+        coordinates: {
+            type: [Number],
+            required: true
+        }
+    },
     price: Number,
     description: String,
     location: String,
